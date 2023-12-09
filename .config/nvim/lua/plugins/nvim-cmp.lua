@@ -38,6 +38,7 @@ return {
         ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
         ["<C-e>"] = cmp.mapping.abort(), -- clear completion window
         ["<CR>"] = cmp.mapping.confirm({ select = false }), -- confirm selection
+        ["<C-y>"] = cmp.mapping.confirm({ select = false }), -- confirm selection
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" }, -- lsp 
